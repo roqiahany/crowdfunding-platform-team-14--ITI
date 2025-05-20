@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --gray-text:#666666;
+    --text-hover:#0B5ED7;
+    --purple-color:#9D1E65;
+    --light-text:#ffffff;
+    --green-text:#2B7152;
+    --orange-text:#EE7624;
+    --bg-cards:#f8f9fa;
+}
+/*header*/
+.header .header-icons i{
+    margin-right: 15px;
+    transition: all 1s;
+}
+.header .header-icons i:hover{
+    transform: scale(1.3);
+    color: var(--text-hover);
+}
+/*navbar*/
+.logo-img{
+    width: 80px;
+    height: 50px;
+}
+.navbar ul li a:hover{
+    color: var(--text-hover);
+    border-bottom: 2px solid var(--text-hover);
+    font-weight: 700;
+}
+.hero-section p{
+    line-height: 30px;
+    max-width: 450px;
+    font-weight:500 !important;
+    font-size: 18px;
+}
+/*Campaigns Section*/
+
+/*search*/
+.input-container{
+    position: relative;
+}
+.input-container input{
+    padding: 12px 12px 12px 32px;
+    width: 70%;
+    height: 60px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+}
+.input-container .search-icon{
+    position: absolute;
+    bottom:16px;
+    right:17%;
+}
+.input-container .search-icon i,.campaign-ratio h6{
+   color:var(--gray-text) ;
+}
+.compaing-container,.filter button,.header .header-icons i{
+    cursor: pointer;
+}
+/*campaigns*/
+
+/*campaigns*/
+.campaign:hover{
+   transform: translateY(-15px);
+}
+.campaign img{
+    transition: all 1s;
+    border-radius:15px !important;
+    height: 230px !important;
+}
+.campaign{
+    position: relative;
+    background-color: var(--background-color-secondary) !important;
+    transition: all 1s;
+    height:540px !important;
+    border-radius:15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.campaign:hover img{
+    filter:grayscale(1.2)
+}
+.campaign button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+/*Our goal*/
+.rounded-hexagon {
+    width: 100px;
+    height: 100px;
+    background:var(--text-hover);
+    border-radius: 50%;
+    color: var(--light-text);
+    font-size: 2rem;
+}
+.our-goal h3{
+    font-size: 22px !important;
+}
+.our-goal p{
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--gray-text);
+}
+.our-goal h3,.title,.statistics-card h4{
+  position: relative;
+  display: inline-block; 
+}
+
+.our-goal h3::after,.title::after,.statistics-card h4::after{
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--text-hover);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px; 
+}
+
+/*statistics section*/
+.statistics-section h2{
+    font-style: italic;
+}
+.statistics-section span{
+    font-size: 35px;
+    font-weight: 700;
+}
+.statistics-section h4{
+    font-size: 22px !important;
+}
+.statistics-card h4::after{
+  bottom: -20px;
+
+}
+/*years card*/
+.statistics-card:nth-child(1){
+   color:var(--text-hover) !important;
+}
+.statistics-card.years h4::after{
+  background-color: var(--text-hover) !important; 
+}
+/*country card*/
+.statistics-card:nth-child(2){
+   color:var(--purple-color);
+}
+.statistics-card.country h4::after{
+  background-color: var(--purple-color) !important; 
+}
+/*country card*/
+.statistics-card:nth-child(3){
+   color:var(--orange-text);
+}
+.statistics-card.campaigns-num h4::after{
+  background-color: var(--orange-text) !important; 
+}
+/*Help card*/
+.statistics-card:nth-child(4){
+   color:var(--green-text);
+}
+.statistics-card.help h4::after{
+  background-color: var(--green-text) !important; 
+}
+
+/*Footer Style*/
+footer h5{
+    font-weight: 600;
+    color:rgb(11, 82, 189);
+}
+footer p{
+    line-height: 25px;
+}
+footer ul li{
+    padding-top: 10px;
+    font-size: 14px;
+}
+footer .img-footer{
+    width: 70px !important;
+}
+
+
+
+/* media query for header*/
+@media(400px <= width <=600px){
+    .home{
+        height: 100vh;
+    }
+    .header{
+        height: 8vh !important;
+    }
+    .navbar ul li a{
+        border-bottom: none !important;
+    }
+    p{
+        white-space: wrap;
+        margin:30px 0;
+    }
+    .statistics-card{
+        margin-bottom: 50px !important;
+    }
+    .campaign{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+

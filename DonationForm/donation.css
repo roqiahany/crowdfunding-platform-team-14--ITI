@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-hover: #0b5ed7;
+  --light-text: #ffffff;
+}
+/*header*/
+.header .header-icons i {
+  margin-right: 15px;
+}
+/*navbar*/
+.logo-img {
+  width: 80px;
+  height: 50px;
+}
+.navbar ul li a:hover {
+  color: var(--text-hover);
+  border-bottom: 2px solid var(--text-hover);
+  font-weight: 700;
+}
+.donation-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+#donationForm input,
+#donationForm select {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+/* media query for header*/
+@media(400px <= width <=600px){
+      .navbar ul li a{
+        border-bottom: none !important;
+    }
+    .contact-section{
+      width: 90%;
+    }
+    .donation-section{
+      width: 90% !important;
+      text-align: center;
+    }
+    footer .image{
+      width: 70px !important;
+    }
+
+ }

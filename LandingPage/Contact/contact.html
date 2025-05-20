@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Header Section-->
+    <section class="header bg-black h-50 py-2 d-flex justify-content-end pe-3">
+    <div class="header-icons text-light">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    </section>
+
+    <!--NavBar Section-->
+    <section class="navbar-section">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+        <img src="../../assets/Images/logo.jpg" alt="Logo image" class="logo-img">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../LandingPage/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="">Event</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../LandingPage/Contact/contact.html">Contact</a>
+            </li>
+
+            </ul>
+            <div class="d-flex buttons-register">
+            <button class="btn me-2" type="submit">
+                Sign Up
+            </button>
+            <button class="btn btn-primary px-4 fw-bold" type="submit">
+                Login
+            </button>
+            </div>
+        </div>
+        </div>
+    </nav>
+    </section>
+
+    <!-- Header -->
+    <header class="contact-header text-black text-center my-5">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="container contact-section mb-5">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="form-section">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject" required>
+                  <option selected disabled value="">Choose a subject</option>
+                  <option>General Inquiry</option>
+                  <option>Suggestions</option>
+                  <option>Support</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Write your message here..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="form-section office-info">
+            <h5 class="mb-4"><i class="fa-solid fa-location-dot"></i> Our Office</h5>
+            <p><i class="fas fa-building"></i> Twitter, Inc.</p>
+            <p><i class="fas fa-location-dot"></i> 795 Folsom Ave, Suite 600, San Francisco, CA 94107</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> first.last@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

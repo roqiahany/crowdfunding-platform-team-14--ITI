@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --gray-text:#666666;
+    --text-hover:#0B5ED7;
+    --purple-color:#9D1E65;
+    --light-text:#ffffff;
+    --green-text:#2B7152;
+    --orange-text:#EE7624;
+    --background-color-secondary:#f8f9fa;
+    --background-color: #1a2131;
+    --dark-color:#2a2a40;
+}
+body{
+    background-color: var(--dark-color);
+}
+/*header*/
+.header .header-icons i {
+  margin-right: 15px;
+}
+/*navbar*/
+.logo-img {
+  width: 80px;
+  height: 50px;
+}
+.navbar ul li a:hover {
+  color: var(--text-hover);
+  border-bottom: 2px solid var(--text-hover);
+  font-weight: 700;
+}
+
+/*campaigns*/
+.campaign:hover{
+   transform: translateY(-15px);
+}
+.campaign img{
+    transition: all 1s;
+    border-radius:15px !important;
+    height: 230px !important;
+}
+.campaign{
+    position: relative;
+    background-color: var(--background-color-secondary) !important;
+    transition: all 1s;
+    height:540px !important;
+    text-align: center;
+    border-radius:15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.campaign:hover img{
+    filter:grayscale(1.2)
+}
+.campaign button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+/*filter*/
+.filter button{
+    border: 1px solid var(--gray-text);
+    border-radius: 32px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+.filter button:hover{
+    background-color: var(--background-color);
+    color: var(--light-text);
+    border: 1px solid var(--background-color);
+}
+.filter .active{
+    background-color: var(--text-hover);
+    color: var(--light-text);
+    border: 1px solid var(--text-hover);
+}
+
+
+

@@ -1,0 +1,40 @@
+:root{
+    --background-color-secondary:#f8f9fa;
+    --background-color: #1a2131;
+    --text-light:#ffffff;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-image{
+    background-color: var(--background-color);
+    height: 30vh;
+}
+h2,.card .arrow{
+    color: var(--background-color);
+}
+.card{
+    margin-top: -100px;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color:var(--background-color-secondary) ;
+}
+input{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.signup-icons i{
+    color:var(--background-color) !important;
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+button{
+    border: 1px solid var(--background-color) !important;
+    background-color:var(--background-color) !important;
+    color:var(--text-light) !important;
+}
+
+
+::placeholder{
+    font-size: 14px !important;
+}
