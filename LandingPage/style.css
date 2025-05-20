@@ -15,6 +15,7 @@ body{
     --green-text:#2B7152;
     --orange-text:#EE7624;
     --bg-cards:#f8f9fa;
+    --background-dark: #1a2131;
 }
 /*header*/
 .header .header-icons i{
@@ -26,6 +27,11 @@ body{
     color: var(--text-hover);
 }
 /*navbar*/
+.navbar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+}
 .logo-img{
     width: 80px;
     height: 50px;
@@ -40,6 +46,9 @@ body{
     max-width: 450px;
     font-weight:500 !important;
     font-size: 18px;
+}
+h2{
+    color:var(--background-dark);
 }
 /*Campaigns Section*/
 
@@ -78,6 +87,9 @@ body{
     border-radius:15px !important;
     height: 230px !important;
 }
+.campaign:hover img{
+    filter:grayscale(1.2)
+}
 .campaign{
     position: relative;
     background-color: var(--background-color-secondary) !important;
@@ -86,8 +98,9 @@ body{
     border-radius:15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.campaign:hover img{
-    filter:grayscale(1.2)
+.campaign p,.our-goal p{
+    font-weight: 500 !important;
+    font-size: 16px !important;
 }
 .campaign button {
   position: absolute;
@@ -110,7 +123,6 @@ body{
 }
 .our-goal p{
     margin-top: 15px;
-    font-size: 15px;
     color: var(--gray-text);
 }
 .our-goal h3,.title,.statistics-card h4{
@@ -174,16 +186,19 @@ body{
 }
 
 /*Footer Style*/
+footer{
+    background-color: var(--background-dark);
+}
 footer h5{
     font-weight: 600;
-    color:rgb(11, 82, 189);
+    color:rgb(17, 72, 155);
 }
 footer p{
     line-height: 25px;
 }
 footer ul li{
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
 }
 footer .img-footer{
     width: 70px !important;

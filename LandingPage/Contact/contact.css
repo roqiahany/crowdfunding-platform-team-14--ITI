@@ -3,23 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --text-hover: #0b5ed7;
+  --light-text: #ffffff;
+  --background-dark: #1a2131;
+}
 body {
+  background-color: var(--background-dark);
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
-:root {
-  --gray-text: #666666;
-  --text-hover: #0b5ed7;
-  --purple-color: #9d1e65;
-  --light-text: #ffffff;
-  --green-text: #2b7152;
-  --orange-text: #ee7624;
-}
-/*header*/
-.header .header-icons i {
-  margin-right: 15px;
-}
+
+
 /*navbar*/
+.navbar{
+  background-color: var(--light-text);
+  border-bottom-left-radius:20px !important;
+  border-bottom-right-radius:20px !important;
+}
 .logo-img {
   width: 80px;
   height: 50px;
@@ -48,6 +49,12 @@ body {
   box-shadow: none;
   border-color:var(--text-hover);
 }
+.form-control,select{
+  padding: 10px !important;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
 
 .office-info i {
   color:var(--text-hover);
@@ -55,7 +62,7 @@ body {
 }
 
 ::placeholder{
-    font-size: 13px !important;
+    font-size: 14px !important;
 }
 
 
@@ -67,4 +74,4 @@ body {
     .contact-section{
       width: 90%;
     }
- }
+  }

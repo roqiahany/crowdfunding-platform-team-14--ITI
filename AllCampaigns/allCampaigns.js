@@ -4,7 +4,7 @@ window.addEventListener('load',()=>{
     let buttonFilter=document.querySelectorAll('.filter-button')
     let campaignsData=[];
 
-
+    //get campaigns
     const getAllCampaigns=async function(){
         try {
             let response=await fetch('http://localhost:3000/campaigns');
@@ -19,6 +19,7 @@ window.addEventListener('load',()=>{
         }
     }
 
+    //display campaigns
     const displayCampaignsData=function(result){
         campaignCard.innerHTML='';
         result.forEach(compaign => {
@@ -27,10 +28,10 @@ window.addEventListener('load',()=>{
             <div class="col-md-4">
                 <div class="bg-success p-2 campaign">
                     <img src="${compaign.image}" alt="" class="img-fluid"/>
-                    <p class="text-center fs-4 fw-semibold pt-2">${compaign.title}</p>
+                    <h5 class="text-center fs-4 fw-semibold py-2">${compaign.title}</h5>
                     <p> ${compaign.description}</p>
-                    <p>goal: ${compaign.goal}$</p>
-                    <p>Deadlind: ${compaign.deadline}</p>
+                    <p>goal:<span class="fs-5 fw-bold"> ${compaign.goal}$</span></p>
+                    <p>Deadlind:<span class="fw-semibold"> ${compaign.deadline}</span></p>
                     <a href="../DonationForm/donation.html?id=${compaign.id}">
                         <button class="btn btn-primary px-3">Donate Now</button>
                     </a>
@@ -42,11 +43,13 @@ window.addEventListener('load',()=>{
 
     };
 
+    //sort by deadline
     sortButton.addEventListener('click', () => {
         const sorted = [...campaignsData].sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
         displayCampaignsData(sorted);
     });
 
+    //filter campaigns by category
     buttonFilter.forEach(button=>{
         button.addEventListener('click',async()=>{
             let category=button.innerHTML.trim();

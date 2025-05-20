@@ -8,24 +8,24 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --gray-text:#666666;
     --text-hover:#0B5ED7;
-    --purple-color:#9D1E65;
     --light-text:#ffffff;
-    --green-text:#2B7152;
-    --orange-text:#EE7624;
     --background-color-secondary:#f8f9fa;
-    --background-color: #1a2131;
-    --dark-color:#2a2a40;
+    --background-dark: #1a2131;
 }
 body{
-    background-color: var(--dark-color);
+    background-color: var(--background-dark);
 }
 /*header*/
 .header .header-icons i {
   margin-right: 15px;
 }
-/*navbar*/
+.navbar-section .navbar{
+    background-color: var(--light-text) !important;
+    border-bottom-left-radius:15px !important;
+    border-bottom-right-radius:15px !important;
+}
+
 .logo-img {
   width: 80px;
   height: 50px;
@@ -63,7 +63,6 @@ body{
   left: 50%; 
   transform: translateX(-50%);
 }
-
 /*filter*/
 .filter button{
     border: 1px solid var(--gray-text);
@@ -72,15 +71,49 @@ body{
     margin-left: 8px;
 }
 .filter button:hover{
-    background-color: var(--background-color);
-    color: var(--light-text);
-    border: 1px solid var(--background-color);
-}
-.filter .active{
     background-color: var(--text-hover);
     color: var(--light-text);
     border: 1px solid var(--text-hover);
 }
+.filter .active{
+    color: var(--light-text);
+    border: 1px solid var(--text-hover);
+}
+.filter .active:hover{
+    background-color: transparent !important;
+    border:none ;
+}
 
+/* media query for header*/
+@media(400px <= width <=600px){
+    .campaign{
+        width: 80%;
+        margin: 0 auto;
+    }
 
+    .features {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .filter button {
+        margin-left: 0 !important;
+        flex: 1 1 calc(50% - 10px);
+        min-width: 120px;
+        text-align: center;
+    }
+
+    #sortByDeadline {
+        align-self: center;
+        margin-top: 10px;
+    }
+}
 

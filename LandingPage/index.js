@@ -40,10 +40,10 @@ window.addEventListener('load', () => {
             <div class="col-md-4">
                 <div class="bg-success p-2 campaign">
                     <img src="${compaign.image}" alt="" class="img-fluid"/>
-                    <p class="text-center fs-4 fw-semibold pt-2">${compaign.title}</p>
+                    <h5 class="text-center fs-4 fw-semibold py-2 px-3">${compaign.title}</h5>
                     <p> ${compaign.description}</p>
-                    <p>goal: ${compaign.goal}$</p>
-                    <p>Deadlind: ${compaign.deadline}</p>
+                    <p>goal:<span class="fs-5 fw-bold"> ${compaign.goal}$</span></p>
+                    <p>Deadlind:<span class="fw-semibold"> ${compaign.deadline}</span></p>
                     <a href="../auth/login.html">
                         <button class="btn btn-primary px-3">Donate Now</button>
                     </a>

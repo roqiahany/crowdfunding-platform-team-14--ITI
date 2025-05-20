@@ -22,8 +22,10 @@ window.addEventListener("load", () => {
 
                     if (user.role.toLowerCase() === "backer") {
                         window.location.href = "../AllCampaigns/allCampaigns.html";
-                    } else if (user.role.toLowerCase() === "campaigner") {
-                        window.location.href = "";
+                    } else if (user.role.toLowerCase() === "approved_campaigner") {
+                        window.location.href = "../DashBoardCampaigner/index.html";
+                    }else if (user.role.toLowerCase() === "admin") {
+                        window.location.href = "../DashBoardAdmin/index.html";
                     } else {
                         alert("Unknown user role. Please contact support.");
                     }

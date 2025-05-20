@@ -9,18 +9,14 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --gray-text:#666666;
-    --text-hover:#0B5ED7;
-    --purple-color:#9D1E65;
     --light-text:#ffffff;
-    --green-text:#2B7152;
-    --orange-text:#EE7624;
+    --text-hover:#0B5ED7;
     --background-color-secondary:#f8f9fa;
-    --background-color: #1a2131;
+    --background-dark: #1a2131;
     --dark-color:#2a2a40;
 }
 body{
-    background-color: var(--dark-color);
+    background-color: var(--background-dark);
 }
 
 /*header*/
@@ -31,10 +27,12 @@ body{
 /*navbar*/
 .navbar{
     background-color: var(--light-text);
-}
-.navbar{
     border-bottom-left-radius:15px !important;
     border-bottom-right-radius:15px !important;
+}
+.navbar ul li a{
+  font-size: 17px !important;
+  font-weight: 500 !important;
 }
 .logo-img {
   width: 80px;
@@ -43,7 +41,7 @@ body{
 .navbar ul li a:hover {
   color: var(--text-hover);
   border-bottom: 2px solid var(--text-hover);
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .donation-card {
   background:var(--light-text);
@@ -58,27 +56,6 @@ body{
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.donation-card .card-body {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.donation-card .card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.donation-card p {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
-  color: #333;
-}
-
-.donation-card .text-success {
-  font-weight: bold;
-  font-size: 1.25rem;
+h5{
+  color: var(--background-dark) !important;
 }
