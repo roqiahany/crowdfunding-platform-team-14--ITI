@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoardCampaigner</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div id="campaignerInfo"></div>
+        <button onclick="showSection('add')">➕ Add Campaign</button>
+        <button onclick="showSection('my')">📂 My Campaigns</button>
+      </aside>
+
+      <main class="main-content">
+        <div
+          id="toastContainer"
+          style="position: fixed; top: 20px; right: 20px; z-index: 9999"
+        ></div>
+        <section id="addCampaignSection" style="display: block">
+          <h2>Add Campaign</h2>
+          <form id="campaignForm">
+            <div class="input-group">
+              <input
+                type="text"
+                name="title"
+                placeholder="Campaign Title"
+                required
+              />
+              <input
+                type="number"
+                name="goal"
+                placeholder="Goal Amount"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <input type="date" name="deadline" required />
+              <select name="category" required>
+                <option value="">Select Category</option>
+                <option value="Education">Education</option>
+                <option value="Health">Health</option>
+              </select>
+            </div>
+
+            <textarea
+              name="description"
+              placeholder="Campaign Description"
+              required
+            ></textarea>
+
+            <input type="file" name="image" required />
+
+            <div id="rewardsContainer">
+              <!-- rewards fields -->
+            </div>
+
+            <button type="button" onclick="addReward()">Add Reward</button>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <section id="myCampaignsSection" style="display: none">
+          <h2>My Campaigns</h2>
+          <div id="myCampaignsContainer"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

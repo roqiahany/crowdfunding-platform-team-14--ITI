@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoardAdmin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="adminInfo" class="admin-info"></div>
+
+    <div id="stats" class="stats"></div>
+    <label>
+      <input type="checkbox" id="filterInactive" />
+      Show Inactive Users Only
+    </label>
+    <h2>Users</h2>
+    <table id="usersTable" class="admin-table"></table>
+
+    <h2>Campaigns</h2>
+    <table id="campaignsTable" class="admin-table"></table>
+
+    <h2>Pledges</h2>
+    <table id="pledgesTable" class="admin-table"></table>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

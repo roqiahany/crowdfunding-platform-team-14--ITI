@@ -1,0 +1,87 @@
+{
+ "users": [
+ {
+ "id": 1,
+ "name": "Jane Doe",
+ "role": "campaigner",
+ "isActive": true,
+ "email": "jane@example.com",
+ "password": "hashed_password"
+ },{
+ "id": 2,
+ "name": "Doe",
+ "role": "campaigner",
+ "isActive": true,
+ "email": "Doe@example.com",
+ "password": "hashed_password"
+ },{
+ "id": 3,
+ "name": "roqa",
+ "role": "admin",
+ "isActive": true,
+ "email": "roqa@example.com",
+ "password": "hashed_password"
+ },{
+ "id": 4,
+ "name": "Amany",
+ "role": "user",
+ "isActive": true,
+ "email": "Amany@example.com",
+ "password": "hashed_password"
+ }
+ ],
+ "campaigns": [
+ {
+ "id": 1,
+ "title": "Smart Watch",
+ "creatorId": 1,
+ "goal": 5000,
+ "deadline": "2024-12-31",
+ "isApproved": true,
+ "rewards": [
+ { "id": 1, "title": "Early Bird", "amount": 50 }
+ ]
+ }, {
+ "id": 2,
+ "title": "home furniture",
+ "creatorId": 2,
+ "goal": 10000,
+ "deadline": "2024-12-31",
+ "isApproved": true,
+ "rewards": [
+ { "id": 1, "title": "Early Bird", "amount": 50 }
+ ]
+ }, {
+ "id": 3,
+ "title": "hospital",
+ "creatorId": 2,
+ "goal": 150000,
+ "deadline": "2024-12-31",
+ "isApproved": true,
+ "rewards": [
+ { "id": 1, "title": "Early Bird", "amount": 50 }
+ ]
+ }
+ ],
+ "pledges": [
+ {
+ "id": 1,
+ "campaignId": 1,
+ "userId": 1,
+ "amount": 100,
+ "rewardId": 1
+ }, {
+ "id": 2,
+ "campaignId": 2,
+ "userId": 2,
+ "amount": 400,
+ "rewardId": 2
+ }, {
+ "id": 3,
+ "campaignId": 3,
+ "userId": 3,
+ "amount": 600,
+ "rewardId": 3
+ }
+ ]
+}
