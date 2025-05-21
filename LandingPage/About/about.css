@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
+}
+:root{
+    --gray-text:#666666;
+    --text-hover:#0B5ED7;
+    --purple-color:#9D1E65;
+    --light-text:#ffffff;
+    --green-text:#2B7152;
+    --orange-text:#EE7624;
+    --bg-cards:#f8f9fa;
+    --background-dark: #1a2131;
+}
+/*header*/
+.header .header-icons i{
+    margin-right: 15px;
+    transition: all 1s;
+}
+.header .header-icons i:hover{
+    transform: scale(1.3);
+    color: var(--text-hover);
+}
+/*navbar*/
+.navbar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+}
+.logo-img{
+    width: 80px;
+    height: 50px;
+}
+.navbar ul li a:hover{
+    color: var(--text-hover);
+    border-bottom: 2px solid var(--text-hover);
+    font-weight: 700;
+}
+/*about content*/
+h2{
+    font-size:22px !important;
+    color: var(--background-dark);
+}
+p{
+    margin-top: 20px;
+    font-size: 15px !important;
+}
+/*Stories*/
+.stories img{
+    height:250px !important;
+    border-radius: 15px !important;
+}
+.stories .card{
+    background-color: var(--background-color-secondary) !important;
+    transition: all 1s;
+    text-align: center;
+    border-radius:15px;
+    border-radius: 15px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.stories .card h5{
+    font-weight: 700 !important;
+    color: var(--background-dark);
+}
+
+/*Footer Style*/
+footer{
+    background-color: var(--background-dark);
+}
+footer h5{
+    font-weight: 600;
+    color:rgb(17, 72, 155);
+}
+footer p{
+    line-height: 25px;
+}
+footer ul li{
+    padding-top: 10px;
+    font-size: 15px;
+}
+footer .img-footer{
+    width: 70px !important;
+}
+
+/* media query for header*/
+@media(400px <= width <=600px){
+    .stories,.content{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
